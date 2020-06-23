@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-4">
+    <div class="col-xs-4" *ngIf="item?.score">
         <p><i class="fa fa-thumbs-up mr-1" aria-hidden="true"></i>{{item?.score}} | </p>
     </div>
     <div class="col-xs-3" *ngIf="item?.by">
@@ -16,7 +16,7 @@
     <div class="col-xs-4">
         <p>{{item?.time * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</p>
     </div>
-    <div class="ml-auto mr-3">
+    <div class="ml-auto mr-3" *ngIf="item?.descendants">
         <p><i class="fa fa-comments mr-1" aria-hidden="true"></i>{{item?.descendants}}</p>
     </div>
 </div>
