@@ -1,0 +1,20 @@
+.news-story-card {
+    padding: 1em 1em 1em .5em;
+    border-bottom: 0.2em solid #F68423;
+  }
+  
+  .news-story {
+    display: block;
+  }
+
+  ol {
+    padding: 0 0.4em;
+    margin: 0;
+  }
+    li {
+      list-style-type: none;
+      position: relative;
+      font-weight:bold;
+    }
+  
+  

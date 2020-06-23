@@ -1,0 +1,24 @@
+nav{
+    background-color: #F68423;
+}
+
+.nav-link, .navbar-brand {
+    color:white;
+}
+
+.nav-item{
+    padding-right:1em;
+}
+
+.navbar-brand:hover, .nav-item:hover{
+    font-weight:bold;
+    transform: scale(1.1);
+}
+.navbar-icon{
+    height:1.7em;
+    width:1.7em;
+}
+
+.navbar-icon:hover{
+    transform: scale(1.2);
+}

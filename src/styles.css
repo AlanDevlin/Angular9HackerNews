@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-content {
+    min-height:100vh; /* Ensures it will cover 100% of viewport */
+    position: relative;
+    padding-bottom: 10em; /* Same as height of footer */
+    display: block;
+    padding-top: 1.5em;
+    
+}
+
+.news-story-card {
+    padding: 1em 1em 1em .5em;
+    border-bottom: 0.2em solid #F68423;
+    min-width:100%;
+  }
+  
+  .news-story {
+    display: block;
+  }
+
+  ol {
+    padding: 0 0.4em;
+    margin: 0;
+  }
+  ol  li {
+      list-style-type: none;
+      position: relative;
+      font-weight:bold;
+    }
+
+    .pagination li a {
+       color:#F68423;
+    }
+
+    .pagination li a:hover {
+      color:black;
+   }
+
+    .page-item.active a.page-link{
+      background-color: #F68423;
+      color: white;
+      font-weight: bold;
+      border-color: black;
+    }

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-8">
+        <h4 class="pr-2"><strong><a href="item?.url">{{item?.title}}</a></strong></h4>
+    </div>
+    <div class="col-xs-4">
+        <h4><a href="item?.url">{{item?.url | domainPipe }}</a></h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4">
+        <p><i class="fa fa-thumbs-up mr-1" aria-hidden="true"></i>{{item?.score}} | </p>
+    </div>
+    <div class="col-xs-3" *ngIf="item?.by">
+        <p>By {{item?.by}} | </p>
+    </div>
+    <div class="col-xs-4">
+        <p>{{item?.time * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</p>
+    </div>
+    <div class="ml-auto mr-3">
+        <p><i class="fa fa-comments mr-1" aria-hidden="true"></i>{{item?.descendants}}</p>
+    </div>
+</div>

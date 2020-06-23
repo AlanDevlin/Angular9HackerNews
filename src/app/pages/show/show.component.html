@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12 w-100">
+      <loading-spinner-wrapper [is-loading]= "isLoadingStories" [loader-message] = "'Loading...'">
+        <ol>
+        <li *ngFor="let item of items | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="news-story-card">
+          <app-news-item idItem="{{item}}" class="news-story"></app-news-item>
+        </li>
+        <ngb-pagination *ngIf="pagination && pagination.totalPages > 1" 
+          class="d-flex justify-content-center pt-3"
+          (pageChange) = "onPageChangedEvent($event)"
+          [page]="pagination.currentPage"
+          [pageSize]="pagination.itemsPerPage"
+          [collectionSize]="pagination.totalItems"
+          [maxSize]="5" [rotate]="true" [boundaryLinks]="true"  >
+        </ngb-pagination>
+      </ol>
+    </loading-spinner-wrapper>
+    </div>
+  </div>
+  
+  

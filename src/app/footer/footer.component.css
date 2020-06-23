@@ -1,0 +1,17 @@
+#footer {
+    position: relative;
+    padding: 1em;
+    height: 10em;
+    border-top: 0.22em solid #FF6600;
+    text-align: center;
+    background-color:#F8F8F8;
+
+}
+
+li a{
+    color:black;
+}
+
+button {
+    color: #F68423;
+}
